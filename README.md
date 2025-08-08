@@ -1,6 +1,7 @@
 # 💣 UDP Flooding Tool — ddos.c
+## Developed by [Kalpesh Solanki](https://kalpeshsolanki.me)
 
-# ⚠️ Disclaimer:
+# ⚠️ Disclaimer: 
 This code performs a UDP flood attack and is intended for educational and ethical testing ONLY.
 Unauthorized use against networks is ILLEGAL under most jurisdictions (e.g., Computer Misuse Act, CFAA, etc.).
 
@@ -14,9 +15,13 @@ This C program launches a UDP flood attack on a target IP and port for a specifi
 - Statically linked binary.
 
 # 🔧 Compilation
-Use the following gcc command to compile:
+Use the following `gcc` or `g++` command to compile:
 ```bash
 gcc ddos.c -o fuck -lz -lpthread -static
+```
+or
+```bash
+g++ -std=c++14 ddos.cpp -o fuck -pthread
 ```
 
 - lpthread: Link pthreads for multithreading.
